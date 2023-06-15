@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media(min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media(min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.head img {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+
+.head h1 {
+  font-size: 12px;
+}
+
+@media(min-width:1000px) {
+  .head h1 {
+    font-size: 40px;
+  }
+
+  .head img {
+    width: 55px;
+    height: 50px;
+  }
+}
+
+.form {
+  margin: 20px;
+  margin-bottom: 200px;
+}
+
+/*.form form {}*/
+
+.form form .inputs {
+  text-align: center;
+}
+
+@media(min-width:1000px) {
+  .form form .inputs .input1 {
+    margin: 50px;
+  }
+
+  .form form .inputs .input1 input {
+    width: 500px;
+  }
+
+  .form form .inputs .input2 {
+    margin: 50px;
+  }
+
+  .form form .inputs .input2 input {
+    width: 500px;
+  }
+
+  .form form .inputs .input3 {
+    margin: 50px;
+  }
+
+  .form form .inputs .input3 input {
+    width: 500px;
+  }
+}
+
+@media(min-width:1000px) {
+  .form form .inputs .input4 input {
+    width: 500px;
+  }
+}
+
+.form form .inputs .input1 {
+  margin-top: 30px;
+}
+
+.form form .inputs .input1 input {
+  border: none;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+}
+
+.form form .inputs .input1 input:hover {
+  border: none;
+  border: 1px solid #880E9D;
+}
+
+.form form .inputs .input2 {
+  margin: 30px;
+}
+
+.form form .inputs .input2 input {
+  border: none;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+}
+
+.form form .inputs .input3 {
+  margin: 30px;
+}
+
+.form form .inputs .input3 input {
+  border: none;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+}
+
+.form form .inputs .input4 {
+  margin: 30px;
+}
+
+.form form .inputs .input4 input {
+  border: none;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+}
+
+.form form .inputs .input5 {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -40px;
+}
+
+/*.form form .inputs .input5 span {}*/
+
+/*.form form .inputs .input5 input {}*/
+
+.form form .inputs .input6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -20px;
+}
+
+/*.form form .inputs .input6 span {}*/
+
+/*.form form .inputs .input6 input {}*/
+
+
+.form form .inputs .input6 {
+  margin-bottom: 20px;
+
+}
+
+.form form .inputs .input7 button {
+  background-color: #9fdaf8;
+  border: none;
+  padding: 20px;
+  border-radius: 44px;
+  font-weight: bold;
+  width: 200px;
+  cursor: pointer;
+}
+
+.form form .inputs .input7 button:hover {
+  opacity: 0.7;
+}
+
+@media(min-width:1000px) {
+  .form form .inputs .input7 button {
+    width: 500px;
+  }
+}
+
+.note {
+  margin-bottom: 200px;
+}
+
+.note h1 {
+  color: crimson;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+.note p {
+  padding: 15px;
+  padding-top: 0px;
+  color: black;
+}
+
+.note p a {
+  text-decoration: none;
+  color: #4bcbf5;
+}
+
+@media(max-width:1000px) {
+  .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+.footer {
+  background-color: #94e2e5;
+  padding: 50px;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.footer .logo a {
+  text-decoration: none;
+}
+
+.footer .logo h1 {
+  color: black;
+}
+
+.footer .text {
+  display: flex;
+  justify-content: center;
+}
+
+/*.footer .text p {}*/
