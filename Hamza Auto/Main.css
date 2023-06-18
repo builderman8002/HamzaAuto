@@ -453,7 +453,7 @@ body {
 
 .scroll a i {
   color: var(--first-Color);
-  font-size: 60px;
+  font-size: 30px;
 }
 
 @media(min-width:1000px) {
