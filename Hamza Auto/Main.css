@@ -496,6 +496,27 @@ body {
   }
 }
 
+.imggg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.imggg img {
+  width: 320px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+@media(min-width:1000px) {
+  .imggg img {
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+  }
+}
+
 .about {
   margin-bottom: 300px;
 }
