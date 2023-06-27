@@ -471,7 +471,7 @@ body {
   justify-content: center;
 }
 
-.occ .image img {
+.occ .image video {
   width: 320px;
   height: 200px;
   border-radius: 10px;
@@ -485,7 +485,7 @@ body {
 }
 
 @media(min-width:1000px) {
-  .occ .image img {
+  .occ .image video {
     width: 500px;
     height: 400px;
     border-radius: 20px;
