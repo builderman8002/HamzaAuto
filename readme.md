@@ -1,4 +1,4 @@
-<img src="Hamza Auto/Photos/icon.png">Hamza Auto
+<img src="Hamza Auto/Photos/icon.png" width="30px" height="30px">Hamza Auto
 Demo:
 https://builderman8002.github.io/HamzaAuto/
 ⚠️Warning,
