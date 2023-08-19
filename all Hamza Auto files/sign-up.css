@@ -1,0 +1,339 @@
+:root {
+    --mainColor: #111727;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.main11 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.main {}*/
+
+@media(max-width:1000px) {
+    .main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.main .logo {
+    margin: 15px;
+}
+
+.main .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main .logo a img {
+    width: 40px;
+    height: 40px;
+    padding-right: 3px;
+}
+
+.main .logo a h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--mainColor);
+}
+
+@media(max-width:1000px) {
+    .main .logo a h1 {
+        display: none;
+    }
+}
+
+.main .first {
+    margin-top: 70px;
+}
+
+.main .first h1 {
+    font-size: 20px;
+    color: var(--mainColor);
+
+}
+
+@media (min-width:1000px) {
+    .main .first h1 {
+        font-size: 30px;
+    }
+}
+
+.outfoc {
+    border-radius: 5px;
+}
+
+.main .inputs {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.main .inputs .input-1 {
+    padding-top: 25px;
+}
+
+.main .inputs .input-1 input {
+    width: 500px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-bottom: 1px solid #e8e9e9;
+}
+
+.main .inputs .input-2 {
+    padding-top: 25px;
+}
+
+.main .inputs .input-2 input {
+    width: 500px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-bottom: 1px solid #e8e9e9;
+}
+
+.main .inputs .input-3 {
+    padding-top: 25px;
+}
+
+.main .inputs .input-3 input {
+    width: 500px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-bottom: 1px solid #e8e9e9;
+}
+
+.main .inputs .input-4 {
+    padding-top: 25px;
+}
+
+.main .inputs .input-4 button {
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #111727;
+    cursor: pointer;
+
+}
+
+.main .inputs .input-4 button h1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.main .inputs .input-4 button:hover {
+    background-color: #1c253d;
+}
+
+@media(max-width:1000px) {
+    .main .inputs .input-1 input {
+        width: 300px;
+
+    }
+
+    .main .inputs .input-2 input {
+        width: 300px;
+
+    }
+
+    .main .inputs .input-3 input {
+        width: 300px;
+
+    }
+
+    .main .inputs .input-4 {
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+    .main .inputs .input-4 button {
+        width: 300px;
+
+    }
+}
+
+.main .other {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    border: 1px solid #111727;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.main .other img {
+    width: 40px;
+    height: 40px;
+}
+
+.main .other p {
+    font-size: 15px;
+    color: var(--mainColor);
+
+}
+
+@media(max-width:1000px) {
+    .main .other {
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 15px;
+        width: 300px;
+    }
+}
+
+
+.main .other-1 {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #111727;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.main .other-1 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+}
+
+.main .other-1 p {
+    font-size: 15px;
+    color: var(--mainColor);
+
+}
+
+@media(max-width:1000px) {
+    .main .other-1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 15px;
+        width: 300px;
+    }
+}
+
+
+
+
+.main .other-2 {
+    margin-top: 25px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .other-2 p {
+    font-size: 17px;
+}
+
+.main .other-2 p a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.main .other-2 p a:hover {
+    text-decoration: underline;
+}
+
+
+@media(min-width:1000px) {
+    .main .other-2 {
+        display: none;
+    }
+}
+
+.main11 .second {
+    margin-right: -99px;
+}
+
+/*.main11 .second .imgg {}*/
+
+.main11 .second .imgg img {
+    width: 500px;
+    height: 621px;
+}
+
+.main11 .second .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+}
+
+.main11 .second .btn button {
+    border: none;
+    background-color: var(--mainColor);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 19px;
+    cursor: pointer;
+
+}
+
+.main11 .second .btn button a {
+    text-decoration: none;
+    color: #0095f6;
+}
+
+.main11 .second .btn button a:hover {
+    text-decoration: underline;
+}
+
+
+@media(max-width:1000px) {
+    .main11 .second {
+        display: none;
+    }
+}
+
+::selection {
+    background-color: #beefff;
+    color: var(--main-Color);
+}
