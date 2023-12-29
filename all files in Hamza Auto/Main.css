@@ -46,6 +46,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 200px;
+  overflow: hidden;
 }
 
 .new-year-1 {
