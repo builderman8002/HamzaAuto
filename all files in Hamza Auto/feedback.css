@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--second-Color);
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media(min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media(min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/*.head .logo {}*/
+
+/*.head .logo a {}*/
+
+.head .logo a img {
+  width: 55px;
+  height: 50px;
+  padding-right: 5px;
+}
+
+/*.head .text {}*/
+
+.head .text h1 {
+  font-weight: 800;
+  color: #111727;
+  font-size: 40px;
+}
+
+@media(max-width:1000px) {
+  .head .logo a img {
+    width: 35px;
+    height: 30px;
+  }
+
+  .head .text h1 {
+    font-size: 25px;
+  }
+}
+
+.outfoc {
+  border-radius: 5px;
+}
+
+.inputs {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*.inputs form {}*/
+
+.inputs form .input-1 {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs form .input-1 input {
+  border: none;
+  outline: none;
+  padding: 6px;
+  border-bottom: 1px solid #e8e9e9;
+  width: 350px;
+}
+
+.inputs form .input-2 {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs form .input-2 input {
+  border: none;
+  outline: none;
+  padding: 6px;
+  border-bottom: 1px solid #e8e9e9;
+  width: 350px;
+
+}
+
+.inputs .text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs .text h1 {
+  color: #111727;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.inputs .text h1 span {
+  color: crimson;
+}
+
+.border {
+  border: 2px solid #111727;
+  border-radius: 10px;
+}
+
+.inputs form .input-3 {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/*.inputs form .input-3 .cho-1 {}*/
+
+.inputs form .input-3 .cho-1 span {
+  font-size: 50px;
+  color: green;
+  cursor: pointer;
+
+}
+
+
+/*.inputs form .input-3 .cho-2 {}*/
+
+.inputs form .input-3 .cho-2 span {
+  font-size: 50px;
+  color: orangered;
+  cursor: pointer;
+
+}
+
+
+/*.inputs form .input-3 .cho-3 {}*/
+
+.inputs form .input-3 .cho-3 span {
+  font-size: 50px;
+  color: red;
+  cursor: pointer;
+
+}
+
+.inputs form .input-4 {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs form .input-4 input {
+  border: none;
+  outline: none;
+  padding: 6px;
+  border-bottom: 1px solid #e8e9e9;
+  width: 350px;
+
+}
+
+.inputs form .input-5 {
+  margin-bottom: 213px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs form .input-5 button {
+  border: none;
+  width: 350px;
+  height: 60px;
+  background-color: #111727;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.inputs form .input-5 button h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.inputs form .input-5 button:hover {
+  background-color: #1c253d;
+}
+
+@media (min-width:1000px) {
+
+  .inputs form .input-1 input {
+    width: 500px;
+  }
+
+  .inputs form .input-2 input {
+    width: 500px;
+  }
+
+  .inputs form .input-4 input {
+    width: 500px;
+    height: 100px;
+  }
+
+  .inputs form .input-5 button {
+    width: 500px;
+
+  }
+}
+
+
+
+.footer {
+  background-color: #9fd3ff;
+  padding-top: 10px;
+}
+
+.footer .head-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .head-2 a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer .head-2 a img {
+  width: 55px;
+  height: 50px;
+  padding-right: 3px;
+}
+
+
+
+.footer .head-2 a h1 {
+  font-size: 33px;
+  font-weight: 800;
+  color: #111727;
+}
+
+@media (max-width:1000px) {
+  .footer .head-2 a img {
+    width: 35px;
+    height: 30px;
+  }
+
+  .footer .head-2 a h1 {
+    font-size: 25px;
+  }
+}
+
+.footer .term {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer .term .p-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .term .p-1 p {
+  font-size: 17px;
+  color: #111727;
+
+}
+
+.footer .term .p-2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer .term .p-2 p {
+  font-size: 17px;
+  color: #111727;
+}
+
+.footer .term .p-3 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer .term .p-3 p {
+  font-size: 17px;
+  color: #111727;
+}
+
+
+::selection {
+  background-color: #beefff;
+  color: var(--first-Color);
+}

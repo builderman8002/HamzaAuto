@@ -1,0 +1,316 @@
+:root {
+    --mainColor: #111727;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+body {
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+.load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #111727;
+    z-index: 100;
+    animation-name: late;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+}
+
+.load .load-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.load .load-1 img {
+    width: 70px;
+    height: 70px;
+    animation-name: load;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.load .load-2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.load .load-2 h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.main {
+    display: flex;
+}
+
+/*.main .first {}*/
+
+.main .first .image {
+    margin-left: -113px;
+}
+
+.main .first .image img {
+    width: 500px;
+    height: 100vh;
+}
+
+@media(max-width:1000px) {
+    .main .first {
+        display: none;
+    }
+}
+
+.main .first .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+.main .first .btn button {
+    border: none;
+    background-color: var(--mainColor);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.main .first .btn button p {
+    color: #ffffff;
+}
+
+.main .first .btn button p a {
+    text-decoration: none;
+    color: #0095f6;
+}
+
+.main .first .btn button p a:hover {
+    text-decoration: underline;
+}
+
+.main .second {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    margin: 15px;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translate(-120px, 0px);
+    opacity: 0;
+}
+
+.main .second .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main .second .logo a img {
+    width: 55px;
+    height: 50px;
+    padding-right: 3px;
+}
+
+.main .second .logo a h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--mainColor);
+}
+
+@media (max-width:1000px) {
+    .main .second .logo a img {
+        width: 45px;
+        height: 40px;
+    }
+
+    .main .second .logo a h1 {
+        display: none;
+    }
+}
+
+.effect {
+    visibility: visible;
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.main .second .head {
+    margin-top: 50px;
+}
+
+.main .second .head h1 {
+    font-size: 20px;
+    color: var(--mainColor);
+}
+
+@media (min-width:1000px) {
+    .main .second .head h1 {
+        font-size: 30px;
+    }
+}
+
+.outfoc {
+    border-radius: 5px;
+}
+
+/*.second .forms {}*/
+
+.second .forms .input-1 {
+    margin-top: 25px;
+}
+
+.second .forms .input-1 input {
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-bottom: 1px solid #e8e9e9;
+    width: 300px;
+}
+
+.second .forms .input-2 {
+    margin-top: 25px;
+}
+
+.second .forms .input-2 input {
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-bottom: 1px solid #e8e9e9;
+    width: 300px;
+}
+
+.second .forms .input-3 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.second .forms .input-3 button {
+    border: none;
+    background-color: var(--mainColor);
+    padding: 10px;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.second .forms .input-3 button h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.second .forms .input-3 button:hover {
+    background-color: #1c253d;
+}
+
+@media (min-width:1000px) {
+    .second .forms .input-1 input {
+        width: 500px;
+    }
+
+    .second .forms .input-2 input {
+        width: 500px;
+    }
+
+    .second .forms .input-3 button {
+        width: 500px;
+    }
+}
+
+.second .btn-1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.second .btn-1 p {
+    color: var(--main-Color);
+    font-size: 17px;
+}
+
+.second .btn-1 p a {
+    text-decoration: none;
+    color: #0095f6;
+}
+
+.second .btn-1 p a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width:1000px) {
+    .second .btn-1 {
+        display: none;
+    }
+}
+
+
+
+@keyframes load {
+    0% {
+        transform: translate(0px, -20px);
+    }
+
+    50% {
+        transform: translate(0px, -40px);
+    }
+
+    100% {
+        transform: translate(0px, -20px);
+    }
+}
+
+@keyframes late {
+    100% {
+        opacity: 0.5;
+    }
+}
+
+::selection {
+    background-color: #beefff;
+    color: var(--main-Color);
+}
