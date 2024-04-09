@@ -110,11 +110,7 @@ body {
 
 
 
-
-
-
 .offer-1 {
-  /* display: none;*/
   width: 500px;
   height: 400px;
   border-radius: 10px;
@@ -195,7 +191,6 @@ body {
 
 
 .offer-2 {
-  /*display: none;*/
   width: 500px;
   height: 400px;
   border-radius: 10px;
@@ -471,7 +466,6 @@ body {
 
 .dropcontent {
   position: absolute;
-  /*display: none;*/
   margin-left: -470px;
   margin-top: 25px;
   width: 500px;
@@ -504,6 +498,7 @@ body {
 .dropdown-menu .dropcontent .droplinks .droplinks-1 a {
   text-decoration: none;
   color: var(--first-Color);
+  transition: 0.3s;
 }
 
 
@@ -524,6 +519,7 @@ body {
   align-items: center;
   justify-content: space-between;
   color: var(--first-Color);
+  transition: 0.3s;
 }
 
 .dropdown-menu .dropcontent .droplinks .droplinks-2 a h1 {
@@ -548,6 +544,7 @@ body {
   align-items: center;
   justify-content: space-between;
   color: var(--first-Color);
+  transition: 0.3s;
 }
 
 .dropdown-menu .dropcontent .droplinks .droplinks-3 a h1 {
@@ -618,6 +615,7 @@ body {
   justify-content: center;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .dropdown-menu .dropcontent .dropother .droplinks-4 a button:hover {
@@ -850,7 +848,6 @@ body {
   }
 }
 
-
 .celebrate .celebrate-1 .celebrate-text-1 {
   display: flex;
   align-items: center;
@@ -888,7 +885,7 @@ body {
 }
 
 .celebrate .celebrate-1 .celebrate-text-1 .celebrate-text .celebrate-head h1 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 900;
   color: var(--first-Color);
 }
@@ -904,6 +901,7 @@ body {
 }
 
 .celebrate .celebrate-1 .celebrate-text-1 .celebrate-text .celebrate-head-1 h1 span {
+  font-weight: 900;
   color: #0075ff;
 }
 
@@ -930,6 +928,8 @@ body {
     font-size: 14px;
   }
 }
+
+
 
 
 
@@ -1759,6 +1759,7 @@ body {
   display: flex;
   align-items: center;
   color: var(--first-Color);
+  transition: 0.3s;
 }
 
 .footer .footer-1 .con .con1 a #mail {
@@ -1784,6 +1785,7 @@ body {
   display: flex;
   align-items: center;
   color: var(--first-Color);
+  transition: 0.3s;
 }
 
 .footer .footer-1 .con .con2 a #sms {
@@ -1807,6 +1809,7 @@ body {
   display: flex;
   align-items: center;
   color: var(--first-Color);
+  transition: 0.3s;
 }
 
 .footer .footer-1 .con .con3 a #loc {

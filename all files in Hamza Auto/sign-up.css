@@ -41,18 +41,41 @@ body {
     overflow: hidden;
 }
 
-/*.sign-done {
-    position: absolute;
-    background-color: #111727;
-    z-index: 1000;
+
+/*
+.bg {
     width: 100%;
     height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.2;
     visibility: hidden;
-    opacity: 0;
     transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}*/
+
+.sign-done1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    z-index: 1000;
+}
+
+.sign-done {
+    background-color: #111727;
+    width: 500px;
+    height: 100px;
+    visibility: hidden;
+    transition: 0.3s;
+    border-radius: 20px;
+    transform: translate(0px, -60px);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width:600px) {
+    .sign-done {
+        width: 300px;
+        height: 100px;
+    }
 }
 
 .effect {
@@ -60,18 +83,39 @@ body {
     opacity: 1;
 }
 
-.sign-done h1 {
-    color: #ffffff;
-    font-size: 30px;
+.sign-done1 .sign-done .sign-done-head {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }
 
-.sign-done span {
+.sign-done1 .sign-done .sign-done-head h1 {
     color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.sign-done1 .sign-done .sign-done-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-done1 .sign-done .sign-done-name #span-1 {
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.sign-done1 .sign-done .sign-done-name h1 {
+    color: #0095f6;
     font-size: 30px;
-    font-weight: bold;
-}*/
+    font-weight: 900;
+}
 
-
+.sign-done1 .sign-done .sign-done-name #span-2 {
+    font-size: 25px;
+    padding-left: 5px;
+}
 
 .load {
     position: absolute;
@@ -111,7 +155,6 @@ body {
     font-size: 28px;
     font-weight: 900;
 }
-
 
 .main11 {
     display: flex;
@@ -165,9 +208,6 @@ body {
 }
 
 
-
-
-
 .main .first {
     margin-top: 60px;
 }
@@ -188,12 +228,11 @@ body {
 }
 
 .main .inputs {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 30px;
 }
 
 .main .inputs .input-1 {
+    display: flex;
     padding-top: 25px;
 }
 
@@ -205,7 +244,28 @@ body {
     border-bottom: 1px solid #e8e9e9;
 }
 
+.main .inputs .input-1 .check-1 {
+    transform: translate(-35px, 2px);
+    display: none;
+}
+
+.main .inputs .input-1 .check-1 i {
+    font-size: 25px;
+    color: green;
+}
+
+.main .inputs .input-1 .nocheck-1 {
+    transform: translate(-35px, 2px);
+    display: none;
+}
+
+.main .inputs .input-1 .nocheck-1 i {
+    font-size: 25px;
+    color: red;
+}
+
 .main .inputs .input-2 {
+    display: flex;
     padding-top: 25px;
 }
 
@@ -217,7 +277,28 @@ body {
     border-bottom: 1px solid #e8e9e9;
 }
 
+.main .inputs .input-2 .check-2 {
+    transform: translate(-35px, 2px);
+    display: none;
+}
+
+.main .inputs .input-2 .check-2 i {
+    font-size: 25px;
+    color: green;
+}
+
+.main .inputs .input-2 .nocheck-2 {
+    transform: translate(-35px, 3px);
+    display: none;
+}
+
+.main .inputs .input-2 .nocheck-2 i {
+    font-size: 25px;
+    color: red;
+}
+
 .main .inputs .input-3 {
+    display: flex;
     padding-top: 25px;
 }
 
@@ -227,6 +308,49 @@ body {
     outline: none;
     padding: 6px;
     border-bottom: 1px solid #e8e9e9;
+}
+
+.main .inputs .input-3 .noshow {
+    transform: translate(-70px, 5px);
+}
+
+.main .inputs .input-3 .noshow i {
+    font-size: 20px;
+    color: #a19e9e;
+    cursor: pointer;
+}
+
+.main .inputs .input-3 .show {
+    display: none;
+    transform: translate(-70px, 5px);
+}
+
+.main .inputs .input-3 .show i {
+    font-size: 20px;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+.main .inputs .input-3 .check-3 {
+    transform: translate(-60px, 0px);
+    padding-top: 3px;
+    display: none;
+}
+
+.main .inputs .input-3 .check-3 i {
+    font-size: 25px;
+    color: green;
+}
+
+.main .inputs .input-3 .nocheck-3 {
+    transform: translate(-60px, 0px);
+    padding-top: 3px;
+    display: none;
+}
+
+.main .inputs .input-3 .nocheck-3 i {
+    font-size: 25px;
+    color: red;
 }
 
 .main .inputs .input-4 {
@@ -240,7 +364,6 @@ body {
     border-radius: 30px;
     background-color: #111727;
     cursor: pointer;
-
 }
 
 .main .inputs .input-4 button h1 {
@@ -254,25 +377,32 @@ body {
 }
 
 @media(max-width:1000px) {
+    .main .inputs .input-1 {
+        justify-content: center;
+    }
+
     .main .inputs .input-1 input {
         width: 300px;
+    }
 
+    .main .inputs .input-2 {
+        justify-content: center;
     }
 
     .main .inputs .input-2 input {
         width: 300px;
+    }
 
+    .main .inputs .input-3 {
+        transform: translate(10px, 0px);
     }
 
     .main .inputs .input-3 input {
         width: 300px;
-
     }
 
     .main .inputs .input-4 {
-        display: flex;
-        justify-content: center;
-        margin-left: 15px;
+        transform: translate(10px, 0px);
     }
 
     .main .inputs .input-4 button {
@@ -292,6 +422,7 @@ body {
     cursor: pointer;
 }
 
+
 .main .other:hover {
     background-color: #eceeee;
 }
@@ -304,18 +435,14 @@ body {
 .main .other p {
     font-size: 15px;
     color: var(--mainColor);
-
 }
 
 @media(max-width:1000px) {
     .main .other {
-        margin-left: auto;
-        margin-right: auto;
-        margin-left: 15px;
         width: 300px;
+        transform: translate(10px, 0px);
     }
 }
-
 
 .main .other-1 {
     margin-top: 25px;
@@ -342,19 +469,14 @@ body {
 .main .other-1 p {
     font-size: 15px;
     color: var(--mainColor);
-
 }
 
 @media(max-width:1000px) {
     .main .other-1 {
-        margin-left: auto;
-        margin-right: auto;
-        margin-left: 15px;
         width: 300px;
+        transform: translate(10px, 0px);
     }
 }
-
-
 
 
 .main .other-2 {

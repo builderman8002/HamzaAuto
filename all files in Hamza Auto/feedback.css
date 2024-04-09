@@ -90,11 +90,11 @@ body {
 }
 
 .inputs form .input-1 input {
+  width: 500px;
   border: none;
   outline: none;
   padding: 6px;
   border-bottom: 1px solid #e8e9e9;
-  width: 350px;
 }
 
 .inputs form .input-2 {
@@ -104,12 +104,11 @@ body {
 }
 
 .inputs form .input-2 input {
+  width: 500px;
   border: none;
   outline: none;
   padding: 6px;
   border-bottom: 1px solid #e8e9e9;
-  width: 350px;
-
 }
 
 .inputs .text {
@@ -177,12 +176,11 @@ body {
 }
 
 .inputs form .input-4 input {
+  width: 500px;
   border: none;
   outline: none;
   padding: 6px;
   border-bottom: 1px solid #e8e9e9;
-  width: 350px;
-
 }
 
 .inputs form .input-5 {
@@ -193,15 +191,15 @@ body {
 
 .inputs form .input-5 button {
   border: none;
-  width: 350px;
-  height: 60px;
+  width: 500px;
+  height: 50px;
   background-color: #111727;
   border-radius: 30px;
   cursor: pointer;
 }
 
 .inputs form .input-5 button h1 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -210,23 +208,22 @@ body {
   background-color: #1c253d;
 }
 
-@media (min-width:1000px) {
-
+@media (max-width:1000px) {
   .inputs form .input-1 input {
-    width: 500px;
+    width: 300px;
   }
 
   .inputs form .input-2 input {
-    width: 500px;
+    width: 300px;
   }
 
   .inputs form .input-4 input {
-    width: 500px;
+    width: 300px;
     height: 100px;
   }
 
   .inputs form .input-5 button {
-    width: 500px;
+    width: 300px;
 
   }
 }

@@ -84,7 +84,9 @@ body {
 
 .main {
     display: flex;
+    justify-content: space-between;
 }
+
 
 /*.main .first {}*/
 
@@ -129,6 +131,7 @@ body {
 .main .first .btn button p a:hover {
     text-decoration: underline;
 }
+
 
 .main .second {
     margin-left: auto;
@@ -201,6 +204,7 @@ body {
 
 .second .forms .input-1 {
     margin-top: 25px;
+    display: flex;
 }
 
 .second .forms .input-1 input {
@@ -211,8 +215,30 @@ body {
     width: 300px;
 }
 
+.second .forms .input-1 .check-1 {
+    transform: translate(-35px, 2px);
+    display: none;
+}
+
+.second .forms .input-1 .check-1 i {
+    font-size: 25px;
+    color: green;
+}
+
+.second .forms .input-1 .nocheck-1 {
+    transform: translate(-35px, 2px);
+    display: none;
+}
+
+.second .forms .input-1 .nocheck-1 i {
+    font-size: 25px;
+    color: red;
+}
+
+
 .second .forms .input-2 {
     margin-top: 25px;
+    display: flex;
 }
 
 .second .forms .input-2 input {
@@ -223,10 +249,49 @@ body {
     width: 300px;
 }
 
+.second .forms .input-2 .noshow {
+    transform: translate(-70px, 5px);
+}
+
+.second .forms .input-2 .noshow i {
+    font-size: 20px;
+    color: #a19e9e;
+    cursor: pointer;
+}
+
+.second .forms .input-2 .show {
+    display: none;
+    transform: translate(-70px, 5px);
+}
+
+.second .forms .input-2 .show i {
+    font-size: 20px;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+.second .forms .input-2 .check-2 {
+    transform: translate(-60px, 2px);
+    display: none;
+}
+
+.second .forms .input-2 .check-2 i {
+    font-size: 25px;
+    color: green;
+}
+
+.second .forms .input-2 .nocheck-2 {
+    transform: translate(-60px, 2px);
+    display: none;
+}
+
+.second .forms .input-2 .nocheck-2 i {
+    font-size: 25px;
+    color: red;
+}
+
 .second .forms .input-3 {
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
 }
 
 .second .forms .input-3 button {
@@ -260,6 +325,22 @@ body {
 
     .second .forms .input-3 button {
         width: 500px;
+    }
+}
+
+@media (max-width:1000px) {
+    .second .forms .input-1 {
+        justify-content: center;
+    }
+
+    .second .forms .input-2 {
+        justify-content: center;
+        transform: translate(10px, 0px);
+    }
+
+    .second .forms .input-3 {
+        justify-content: center;
+        transform: translate(10px, 0px);
     }
 }
 

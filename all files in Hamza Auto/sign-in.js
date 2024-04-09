@@ -15,8 +15,15 @@ function toRight() {
 setTimeout(toRight, 3005)
 
 
+let mainform = document.querySelector(".forms form")
 let inputOne = document.querySelector(".inputOne")
+let check1 = document.querySelector(".check-1")
+let nocheck1 = document.querySelector(".nocheck-1")
 let inputTwo = document.querySelector(".inputTwo")
+let noshow = document.querySelector(".noshow")
+let show = document.querySelector(".show")
+let check2 = document.querySelector(".check-2")
+let nocheck2 = document.querySelector(".nocheck-2")
 
 
 window.onload = function () {
@@ -42,4 +49,67 @@ inputTwo.onfocus = function () {
 inputTwo.onblur = function () {
     inputTwo.classList.remove("outfoc");
     inputTwo.style.border = "";
+}
+
+
+mainform.onsubmit = function (e) {
+    let uservalid = false;
+    let passvalid = false;
+
+    if (inputOne.value !== "" && inputOne.value.length <= 20) {
+        //uservalid = true;
+        check1.style.display = "block"
+        nocheck1.style.display = "none"
+    } else {
+        nocheck1.style.display = "block"
+        check1.style.display = "none"
+    }
+
+    if (inputTwo.value !== "") {
+        //passvalid = true;
+        check2.style.display = "block"
+        nocheck2.style.display = "none"
+    } else {
+        nocheck2.style.display = "block"
+        check2.style.display = "none"
+    }
+
+    if (uservalid === false || passvalid === false) {
+        e.preventDefault();
+    }
+
+    //if you have a database to send form delete "resetform" function//
+
+    function resetform() {
+        if (inputOne.value == "" || inputTwo.value == "") {
+        } else {
+            mainform.reset()
+            console.log("THE FORM HAS BEEN SEND");
+            check1.style.display = "none"
+            check2.style.display = "none"
+        }
+    }
+    setTimeout(resetform, 1000)
+
+}
+
+
+noshow.onclick = function () {
+    if (inputTwo.value == "") {
+        noshow.style.display = "block"
+        show.style.display = "none"
+        inputTwo.type = "password"
+        console.log("NO PASSWORD VALUE")
+    } else {
+        noshow.style.display = "none"
+        show.style.display = "block"
+        inputTwo.type = "text"
+        console.log("PASSWORD VALUE EXIST")
+    }
+}
+
+show.onclick = function () {
+    inputTwo.type = "password"
+    noshow.style.display = "block"
+    show.style.display = "none"
 }

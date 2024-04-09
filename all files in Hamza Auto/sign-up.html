@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 
 <body>
@@ -25,11 +26,18 @@
             <h1>Loading...</h1>
         </div>
     </div>
-    <!--<div class="sign-done">
-        <h1>welcome</h1>
-        <br>
-        <span></span>
-    </div>-->
+    <div class="sign-done1">
+        <div class="sign-done">
+            <div class="sign-done-head">
+                <h1>welcome</h1>
+            </div>
+            <div class="sign-done-name">
+                <span id="span-1">❤️</span>
+                <h1></h1>
+                <span id="span-2">❤️</span>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="main11">
             <div class="main">
@@ -46,16 +54,27 @@
                 <div class="inputs">
                     <form action="">
                         <div class="input-1">
-                            <input class="inputOne" type="text" placeholder="Name" required>
+                            <input class="inputOne" type="text" placeholder="Name">
+                            <div class="check-1"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="nocheck-1"><i class="fa-solid fa-circle-xmark"></i></div>
                         </div>
+
                         <div class="input-2">
-                            <input class="inputTwo" type="email" placeholder="Email" required>
+                            <input class="inputTwo" type="email" placeholder="Email">
+                            <div class="check-2"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="nocheck-2"><i class="fa-solid fa-circle-xmark"></i></div>
                         </div>
+
                         <div class="input-3">
-                            <input class="inputThree" type="password" placeholder="Password" required>
+                            <input class="inputThree" type="password" placeholder="Password">
+                            <div class="noshow"><i class="fa-solid fa-eye-slash"></i></div>
+                            <div class="show"><i class="fa-solid fa-eye"></i></div>
+                            <div class="check-3"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="nocheck-3"><i class="fa-solid fa-circle-xmark"></i></div>
                         </div>
+
                         <div class="input-4">
-                            <button id="bttn" type="submit">
+                            <button id="bttn">
                                 <h1>Create account</h1>
                             </button>
                         </div>

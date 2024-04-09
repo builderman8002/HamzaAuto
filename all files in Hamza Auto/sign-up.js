@@ -57,20 +57,133 @@ inputThree.onblur = function () {
 
 
 
-/*
+let mainform = document.querySelector(".inputs form")
+let check1 = document.querySelector(".check-1")
+let nocheck1 = document.querySelector(".nocheck-1")
+let check2 = document.querySelector(".check-2")
+let nocheck2 = document.querySelector(".nocheck-2")
+let check3 = document.querySelector(".check-3")
+let nocheck3 = document.querySelector(".nocheck-3")
+let noshow = document.querySelector(".noshow")
+let show = document.querySelector(".show")
 let test2 = document.querySelector(".sign-done")
-let test = document.querySelector(".sign-done span")
-let test1 = document.querySelector("#bttn")
+let test = document.querySelector(".sign-done .sign-done-name h1")
 
 
-test1.onclick = function () {
-    test2.classList.toggle("effect")
+mainform.onsubmit = function (e) {
+    let uservalid = false;
+    let emailvalid = false;
+    let passvalid = false;
+
+    if (inputOne.value !== "" && inputOne.value.length <= 20) {
+        //uservalid = true;
+        check1.style.display = "block"
+        nocheck1.style.display = "none"
+    } else {
+        nocheck1.style.display = "block"
+        check1.style.display = "none"
+    }
+
+    if (inputTwo.value !== "") {
+        //emailvalid = true;
+        check2.style.display = "block"
+        nocheck2.style.display = "none"
+    } else {
+        nocheck2.style.display = "block"
+        check2.style.display = "none"
+    }
+    if (inputThree.value !== "") {
+        //passvalid = true;
+        check3.style.display = "block"
+        nocheck3.style.display = "none"
+    } else {
+        nocheck3.style.display = "block"
+        check3.style.display = "none"
+    }
+
+    if (uservalid === false || emailvalid === false || passvalid === false) {
+        e.preventDefault();
+    }
+
+    //if you have a database to send form delete "resetform" function//
+
+    function resetform() {
+        if (inputOne.value == "" || inputTwo.value == "" || inputThree.value == "") {
+        } else {
+            mainform.reset()
+            console.log("THE FORM HAS BEEN SEND");
+            check1.style.display = "none"
+            check2.style.display = "none"
+            check3.style.display = "none"
+        }
+    }
+    setTimeout(resetform, 1000)
+
+
     test.innerHTML = `${inputOne.value}`
+
+    if (inputOne.value == "") {
+        test2.classList.remove("effect")
+    } else {
+        test2.classList.add("effect")
+    }
+
+    if (inputTwo.value == "") {
+        test2.classList.remove("effect")
+    } else {
+        test2.classList.add("effect")
+    }
+
+    if (inputThree.value == "") {
+        test2.classList.remove("effect")
+    } else {
+        test2.classList.add("effect")
+    }
+
+    if (inputOne.value == "" && inputTwo.value !== "" && inputThree.value !== "") {
+        test2.classList.remove("effect")
+    }
+
+    if (inputOne.value !== "" && inputTwo.value == "" && inputThree.value !== "") {
+        test2.classList.remove("effect")
+    }
+
+    if (inputOne.value == "" && inputTwo.value == "" && inputThree.value !== "") {
+        test2.classList.remove("effect")
+    }
+
+    function deleteSignDone() {
+        if (inputOne.value == "" || inputTwo.value == "" || inputThree.value == "") {
+            test2.classList.remove("effect")
+        }
+    }
+    setTimeout(deleteSignDone, 3000)
 }
 
-test2.onclick = function () {
-    test2.classList.toggle("effect")
-}*/
+
+noshow.onclick = function () {
+    if (inputThree.value == "") {
+        noshow.style.display = "block"
+        show.style.display = "none"
+        inputThree.type = "password"
+        console.log("NO PASSWORD VALUE")
+    } else {
+        noshow.style.display = "none"
+        show.style.display = "block"
+        inputThree.type = "text"
+        console.log("PASSWORD VALUE EXIST")
+    }
+
+}
+
+
+show.onclick = function () {
+    inputThree.type = "password"
+    noshow.style.display = "block"
+    show.style.display = "none"
+}
+
+
 
 
 
