@@ -44,20 +44,6 @@ window.onclick = function (event) {
 small.addEventListener("click", event => event.stopPropagation());
 
 
-let newyear = document.querySelector(".new-year");
-let hide = document.getElementById("hide");
-
-function pop() {
-    newyear.classList.add("effectOpenandClose")
-}
-
-hide.onclick = function () {
-    newyear.classList.remove("effectOpenandClose")
-}
-
-setTimeout(pop, 5000)
-setInterval(pop, 50000)
-
 
 
 let offer = document.querySelector(".offer-1");
@@ -71,8 +57,8 @@ cloSe.onclick = function () {
     offer.classList.remove("effectOpenandClose")
 }
 
-setTimeout(popup, 10000)
-setInterval(popup, 60000)
+setTimeout(popup, 6000)
+setInterval(popup, 80000)
 
 
 let OFFER = document.querySelector(".offer-2");
@@ -87,7 +73,7 @@ CLOSE.onclick = function () {
 }
 
 setTimeout(POPUP, 15000)
-setInterval(POPUP, 70000)
+setInterval(POPUP, 100000)
 
 let date = document.querySelector("#date")
 date.innerHTML = `${new Date().getFullYear()}`
