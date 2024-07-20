@@ -43,7 +43,7 @@ body {
   }
 }
 
-
+/*
 .new-year {
   width: 500px;
   height: 400px;
@@ -61,7 +61,7 @@ body {
   visibility: hidden;
 }
 
-/*.new-year .video-new-year {}*/
+/*.new-year .video-new-year {}
 
 
 .new-year .video-new-year video {
@@ -103,7 +103,7 @@ body {
   .new-year .video-new-year video {
     width: 330px;
   }
-}
+}*/
 
 
 .offer-1 {
