@@ -43,7 +43,7 @@ window.onclick = function (event) {
 }
 small.addEventListener("click", event => event.stopPropagation());
 
-
+/*
 let newyear = document.querySelector(".new-year");
 let hide = document.getElementById("hide");
 
@@ -56,7 +56,7 @@ hide.onclick = function () {
 }
 
 setTimeout(pop, 5000)
-setInterval(pop, 50000)
+setInterval(pop, 50000)*/
 
 
 
