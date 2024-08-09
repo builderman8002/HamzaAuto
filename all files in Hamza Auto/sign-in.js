@@ -56,7 +56,7 @@ mainform.onsubmit = function (e) {
     let uservalid = false;
     let passvalid = false;
 
-    if (inputOne.value !== "" && inputOne.value.length <= 20) {
+    if (inputOne.value.match(/^[a-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/) || inputOne.value.match(/^[a-z0-9_\-]{3,25}$/) && inputOne.value.length <= 15) {
         //uservalid = true;
         check1.style.display = "block"
         nocheck1.style.display = "none"
@@ -91,6 +91,12 @@ mainform.onsubmit = function (e) {
     }
     setTimeout(resetform, 1000)
 
+    if (inputTwo.value == "") {
+        noshow.style.display = "block"
+        show.style.display = "none"
+        inputTwo.type = "password"
+        console.log("NO PASSWORD VALUE")
+    }
 }
 
 

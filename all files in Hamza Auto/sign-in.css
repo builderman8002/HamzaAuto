@@ -216,7 +216,8 @@ body {
 }
 
 .second .forms .input-1 .check-1 {
-    transform: translate(-35px, 2px);
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -226,7 +227,8 @@ body {
 }
 
 .second .forms .input-1 .nocheck-1 {
-    transform: translate(-35px, 2px);
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -250,7 +252,8 @@ body {
 }
 
 .second .forms .input-2 .noshow {
-    transform: translate(-70px, 5px);
+    position: absolute;
+    transform: translate(430px, 5px);
 }
 
 .second .forms .input-2 .noshow i {
@@ -260,8 +263,9 @@ body {
 }
 
 .second .forms .input-2 .show {
+    position: absolute;
     display: none;
-    transform: translate(-70px, 5px);
+    transform: translate(430px, 5px);
 }
 
 .second .forms .input-2 .show i {
@@ -271,7 +275,8 @@ body {
 }
 
 .second .forms .input-2 .check-2 {
-    transform: translate(-60px, 2px);
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -281,7 +286,8 @@ body {
 }
 
 .second .forms .input-2 .nocheck-2 {
-    transform: translate(-60px, 2px);
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -335,7 +341,6 @@ body {
 
     .second .forms .input-2 {
         justify-content: center;
-        transform: translate(10px, 0px);
     }
 
     .second .forms .input-3 {
@@ -343,6 +348,34 @@ body {
         transform: translate(10px, 0px);
     }
 }
+
+
+@media (max-width:500px) {
+    .second .forms .input-1 .check-1 {
+        transform: translate(130px, 2px);
+    }
+
+    .second .forms .input-1 .nocheck-1 {
+        transform: translate(130px, 2px);
+    }
+
+    .second .forms .input-2 .noshow {
+        transform: translate(100px, 5px);
+    }
+
+    .second .forms .input-2 .show {
+        transform: translate(100px, 5px);
+    }
+
+    .second .forms .input-2 .check-2 {
+        transform: translate(130px, 2px);
+    }
+
+    .second .forms .input-2 .nocheck-2 {
+        transform: translate(130px, 2px);
+    }
+}
+
 
 .second .btn-1 {
     margin-top: 25px;

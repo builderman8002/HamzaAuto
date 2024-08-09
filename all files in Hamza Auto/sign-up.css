@@ -245,7 +245,8 @@ body {
 }
 
 .main .inputs .input-1 .check-1 {
-    transform: translate(-35px, 2px);
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -255,7 +256,8 @@ body {
 }
 
 .main .inputs .input-1 .nocheck-1 {
-    transform: translate(-35px, 2px);
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -278,7 +280,8 @@ body {
 }
 
 .main .inputs .input-2 .check-2 {
-    transform: translate(-35px, 2px);
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -288,7 +291,8 @@ body {
 }
 
 .main .inputs .input-2 .nocheck-2 {
-    transform: translate(-35px, 3px);
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -311,7 +315,8 @@ body {
 }
 
 .main .inputs .input-3 .noshow {
-    transform: translate(-70px, 5px);
+    position: absolute;
+    transform: translate(420px, 5px);
 }
 
 .main .inputs .input-3 .noshow i {
@@ -321,8 +326,9 @@ body {
 }
 
 .main .inputs .input-3 .show {
+    position: absolute;
     display: none;
-    transform: translate(-70px, 5px);
+    transform: translate(420px, 5px);
 }
 
 .main .inputs .input-3 .show i {
@@ -332,8 +338,8 @@ body {
 }
 
 .main .inputs .input-3 .check-3 {
-    transform: translate(-60px, 0px);
-    padding-top: 3px;
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -343,8 +349,8 @@ body {
 }
 
 .main .inputs .input-3 .nocheck-3 {
-    transform: translate(-60px, 0px);
-    padding-top: 3px;
+    position: absolute;
+    transform: translate(465px, 2px);
     display: none;
 }
 
@@ -376,6 +382,41 @@ body {
     background-color: #1c253d;
 }
 
+@media (max-width:500px) {
+    .main .inputs .input-1 .check-1 {
+        transform: translate(125px, 2px);
+    }
+
+    .main .inputs .input-1 .nocheck-1 {
+        transform: translate(125px, 2px);
+    }
+
+    .main .inputs .input-2 .check-2 {
+        transform: translate(125px, 2px);
+    }
+
+    .main .inputs .input-2 .nocheck-2 {
+        transform: translate(125px, 2px);
+    }
+
+    .main .inputs .input-3 .noshow {
+        transform: translate(80px, 5px);
+    }
+
+    .main .inputs .input-3 .show {
+        transform: translate(80px, 5px);
+    }
+
+    .main .inputs .input-3 .check-3 {
+        transform: translate(125px, 2px);
+    }
+
+    .main .inputs .input-3 .nocheck-3 {
+        transform: translate(125px, 2px);
+    }
+}
+
+
 @media(max-width:1000px) {
     .main .inputs .input-1 {
         justify-content: center;
@@ -394,15 +435,11 @@ body {
     }
 
     .main .inputs .input-3 {
-        transform: translate(10px, 0px);
+        justify-content: center;
     }
 
     .main .inputs .input-3 input {
         width: 300px;
-    }
-
-    .main .inputs .input-4 {
-        transform: translate(10px, 0px);
     }
 
     .main .inputs .input-4 button {
@@ -440,7 +477,6 @@ body {
 @media(max-width:1000px) {
     .main .other {
         width: 300px;
-        transform: translate(10px, 0px);
     }
 }
 
@@ -474,7 +510,6 @@ body {
 @media(max-width:1000px) {
     .main .other-1 {
         width: 300px;
-        transform: translate(10px, 0px);
     }
 }
 

@@ -84,7 +84,7 @@ mainform.onsubmit = function (e) {
         check1.style.display = "none"
     }
 
-    if (inputTwo.value !== "") {
+    if (inputTwo.value.match(/^[a-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/)) {
         //emailvalid = true;
         check2.style.display = "block"
         nocheck2.style.display = "none"
@@ -158,6 +158,13 @@ mainform.onsubmit = function (e) {
         }
     }
     setTimeout(deleteSignDone, 3000)
+
+    if (inputThree.value == "") {
+        noshow.style.display = "block"
+        show.style.display = "none"
+        inputThree.type = "password"
+        console.log("NO PASSWORD VALUE")
+    }
 }
 
 

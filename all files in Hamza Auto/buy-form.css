@@ -99,6 +99,29 @@ body {
   border-bottom: 1px solid #e8e9e9;
 }
 
+
+.inputs form .input-1 .check-1 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-1 .check-1 i {
+  font-size: 25px;
+  color: green;
+}
+
+.inputs form .input-1 .nocheck-1 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-1 .nocheck-1 i {
+  font-size: 25px;
+  color: red;
+}
+
 .inputs form .input-2 {
   margin-bottom: 30px;
   display: flex;
@@ -111,6 +134,29 @@ body {
   padding: 6px;
   width: 350px;
   border-bottom: 1px solid #e8e9e9;
+}
+
+
+.inputs form .input-2 .check-2 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-2 .check-2 i {
+  font-size: 25px;
+  color: green;
+}
+
+.inputs form .input-2 .nocheck-2 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-2 .nocheck-2 i {
+  font-size: 25px;
+  color: red;
 }
 
 .inputs form .input-3 {
@@ -127,6 +173,28 @@ body {
   border-bottom: 1px solid #e8e9e9;
 }
 
+.inputs form .input-3 .check-3 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-3 .check-3 i {
+  font-size: 25px;
+  color: green;
+}
+
+.inputs form .input-3 .nocheck-3 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-3 .nocheck-3 i {
+  font-size: 25px;
+  color: red;
+}
+
 .inputs form .input-4 {
   margin-bottom: 30px;
   display: flex;
@@ -139,6 +207,28 @@ body {
   padding: 6px;
   width: 350px;
   border-bottom: 1px solid #e8e9e9;
+}
+
+.inputs form .input-4 .check-4 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-4 .check-4 i {
+  font-size: 25px;
+  color: green;
+}
+
+.inputs form .input-4 .nocheck-4 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-4 .nocheck-4 i {
+  font-size: 25px;
+  color: red;
 }
 
 .inputs form .input-5 {
@@ -155,6 +245,28 @@ body {
   border-bottom: 1px solid #e8e9e9;
 }
 
+.inputs form .input-5 .check-5 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-5 .check-5 i {
+  font-size: 25px;
+  color: green;
+}
+
+.inputs form .input-5 .nocheck-5 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-5 .nocheck-5 i {
+  font-size: 25px;
+  color: red;
+}
+
 .inputs form .input-6 {
   margin-bottom: 30px;
   display: flex;
@@ -167,6 +279,28 @@ body {
   padding: 6px;
   width: 350px;
   border-bottom: 1px solid #e8e9e9;
+}
+
+.inputs form .input-6 .check-6 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-6 .check-6 i {
+  font-size: 25px;
+  color: green;
+}
+
+.inputs form .input-6 .nocheck-6 {
+  position: absolute;
+  transform: translate(230px, 2px);
+  display: none;
+}
+
+.inputs form .input-6 .nocheck-6 i {
+  font-size: 25px;
+  color: red;
 }
 
 .inputs form .input-7 {
@@ -226,6 +360,57 @@ body {
     width: 500px;
   }
 }
+
+@media (max-width:500px) {
+  .inputs form .input-1 .check-1 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-1 .nocheck-1 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-2 .check-2 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-2 .nocheck-2 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-3 .check-3 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-3 .nocheck-3 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-4 .check-4 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-4 .nocheck-4 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-5 .check-5 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-5 .nocheck-5 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-6 .check-6 {
+    transform: translate(140px, 2px);
+  }
+
+  .inputs form .input-6 .nocheck-6 {
+    transform: translate(140px, 2px);
+  }
+}
+
 
 .note {
   margin-top: 90px;
