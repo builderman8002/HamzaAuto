@@ -108,8 +108,7 @@ mainform.onsubmit = function (e) {
     //if you have a database to send form delete "resetform" function//
 
     function resetform() {
-        if (inputOne.value == "" || inputTwo.value == "" || inputThree.value == "") {
-        } else {
+        if (inputOne.value !== "" && inputOne.value.length <= 20 && inputTwo.value.match(/^[a-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/) && inputThree.value !== "") {
             mainform.reset()
             console.log("THE FORM HAS BEEN SEND");
             check1.style.display = "none"
@@ -117,47 +116,53 @@ mainform.onsubmit = function (e) {
             check3.style.display = "none"
         }
     }
+
     setTimeout(resetform, 1000)
 
 
     test.innerHTML = `${inputOne.value}`
 
-    if (inputOne.value == "") {
-        test2.classList.remove("effect")
-    } else {
-        test2.classList.add("effect")
+    function show55() {
+        if (inputOne.value == "") {
+            test2.classList.add("effect")
+        } else {
+            test2.classList.remove("effect")
+        }
+
+        if (inputTwo.value == "") {
+            test2.classList.add("effect")
+        } else {
+            test2.classList.remove("effect")
+        }
+
+        if (inputThree.value == "") {
+            test2.classList.add("effect")
+        } else {
+            test2.classList.remove("effect")
+        }
+
+        if (nocheck1.style.display == "block") {
+            test2.classList.remove("effect")
+        }
+        if (nocheck2.style.display == "block") {
+            test2.classList.remove("effect")
+        }
+        if (nocheck3.style.display == "block") {
+            test2.classList.remove("effect")
+        }
     }
 
-    if (inputTwo.value == "") {
-        test2.classList.remove("effect")
-    } else {
-        test2.classList.add("effect")
-    }
+    setTimeout(show55, 2000)
 
-    if (inputThree.value == "") {
-        test2.classList.remove("effect")
-    } else {
-        test2.classList.add("effect")
-    }
-
-    if (inputOne.value == "" && inputTwo.value !== "" && inputThree.value !== "") {
-        test2.classList.remove("effect")
-    }
-
-    if (inputOne.value !== "" && inputTwo.value == "" && inputThree.value !== "") {
-        test2.classList.remove("effect")
-    }
-
-    if (inputOne.value == "" && inputTwo.value == "" && inputThree.value !== "") {
-        test2.classList.remove("effect")
-    }
 
     function deleteSignDone() {
         if (inputOne.value == "" || inputTwo.value == "" || inputThree.value == "") {
             test2.classList.remove("effect")
         }
     }
-    setTimeout(deleteSignDone, 3000)
+    setTimeout(deleteSignDone, 5000)
+
+
 
     if (inputThree.value == "") {
         noshow.style.display = "block"
