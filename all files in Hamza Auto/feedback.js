@@ -83,7 +83,7 @@ mainform.onsubmit = function (e) {
         check1.style.display = "none"
     }
 
-    if (inputTwo.value.match(/^[a-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/)) {
+    if (inputTwo.value.match(/^[Aa-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/)) {
         //emailvalid = true;
         check2.style.display = "block"
         nocheck2.style.display = "none"
@@ -109,8 +109,7 @@ mainform.onsubmit = function (e) {
     //if you have a database to send form delete "resetform" function//
 
     function resetform() {
-        if (inputOne.value == "" || inputTwo.value == "" || inputThree.value == "") {
-        } else {
+        if (inputOne.value !== "" && inputOne.value.length <= 20 && inputTwo.value.match(/^[Aa-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/)) {
             mainform.reset()
             console.log("THE FORM HAS BEEN SEND");
             check1.style.display = "none"
@@ -118,6 +117,7 @@ mainform.onsubmit = function (e) {
             check3.style.display = "none"
         }
     }
+
     setTimeout(resetform, 1000)
 
 }

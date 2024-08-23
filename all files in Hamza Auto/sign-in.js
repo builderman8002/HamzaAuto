@@ -1,7 +1,8 @@
 let load = document.querySelector(".load")
 
 function nonload() {
-    load.style.display = "none"
+    load.style.visibility = "hidden"
+    load.style.opacity = "0.5"
 }
 
 setTimeout(nonload, 3000)
@@ -56,7 +57,7 @@ mainform.onsubmit = function (e) {
     let uservalid = false;
     let passvalid = false;
 
-    if (inputOne.value.match(/^[a-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/) || inputOne.value.match(/^[a-z0-9_\-]{3,25}$/) && inputOne.value.length <= 15) {
+    if (inputOne.value.match(/^[Aa-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/) || inputOne.value.match(/^[a-z0-9_\-]{3,25}$/) && inputOne.value.length <= 15) {
         //uservalid = true;
         check1.style.display = "block"
         nocheck1.style.display = "none"
@@ -79,10 +80,8 @@ mainform.onsubmit = function (e) {
     }
 
     //if you have a database to send form delete "resetform" function//
-
     function resetform() {
-        if (inputOne.value == "" || inputTwo.value == "") {
-        } else {
+        if (inputTwo.value !== "" && inputOne.value.match(/^[Aa-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/)) {
             mainform.reset()
             console.log("THE FORM HAS BEEN SEND");
             check1.style.display = "none"

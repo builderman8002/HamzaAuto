@@ -123,9 +123,7 @@ body {
     height: 100%;
     background-color: #111727;
     z-index: 100;
-    animation-name: late;
-    animation-duration: 1.5s;
-    animation-delay: 2.5s;
+    transition: 0.3s;
 }
 
 .load .load-1 {
@@ -608,11 +606,6 @@ body {
     }
 }
 
-@keyframes late {
-    100% {
-        opacity: 0.5;
-    }
-}
 
 ::selection {
     background-color: #beefff;
