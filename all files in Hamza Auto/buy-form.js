@@ -112,7 +112,7 @@ mainform.onsubmit = function (e) {
         check1.style.display = "none"
     }
 
-    if (inputTwo.value.match(/^[Aa-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/)) {
+    if (inputTwo.value.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))\s*$/)) {
         //emailvalid = true;
         check2.style.display = "block"
         nocheck2.style.display = "none"
@@ -161,7 +161,7 @@ mainform.onsubmit = function (e) {
     //if you have a database to send form delete "resetform" function//
 
     function resetform() {
-        if (inputOne.value !== "" && inputOne.value.length <= 20 && inputTwo.value.match(/^[Aa-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/) && inputThree.value.match(/^[0-9]+$/) && inputFour.value.match(/[a-zA-Z]+/) && inputFive.value.length <= 2 && inputFive.value.match(/^[0-9]+$/) && inputSix.value == "y" || inputSix.value == "n") {
+        if (inputOne.value !== "" && inputOne.value.length <= 20 && inputTwo.value.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))\s*$/) && inputThree.value.match(/^[0-9]+$/) && inputFour.value.match(/[a-zA-Z]+/) && inputFive.value.length <= 2 && inputFive.value.match(/^[0-9]+$/) && inputSix.value == "y" || inputSix.value == "n") {
             mainform.reset()
             console.log("THE FORM HAS BEEN SEND");
             check1.style.display = "none"

@@ -57,7 +57,7 @@ mainform.onsubmit = function (e) {
     let uservalid = false;
     let passvalid = false;
 
-    if (inputOne.value.match(/^[Aa-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/) || inputOne.value.match(/^[a-z0-9_\-]{3,25}$/) && inputOne.value.length <= 15) {
+    if (inputOne.value.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))\s*$/) || inputOne.value.match(/^[a-z0-9_\-]{3,25}\s*$/) && inputOne.value.length <= 15) {
         //uservalid = true;
         check1.style.display = "block"
         nocheck1.style.display = "none"
@@ -81,7 +81,7 @@ mainform.onsubmit = function (e) {
 
     //if you have a database to send form delete "resetform" function//
     function resetform() {
-        if (inputTwo.value !== "" && inputOne.value.match(/^[Aa-z0-9_\-]+@[a-z0-9_\-]+(\.[a-z0-9_\-]+)+$/)) {
+        if (inputTwo.value !== "" && inputOne.value.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))\s*$/)) {
             mainform.reset()
             console.log("THE FORM HAS BEEN SEND");
             check1.style.display = "none"
